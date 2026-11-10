@@ -1,0 +1,77 @@
+{
+  "raw_rows": 9172,
+  "eligible_before_dedup": 4417,
+  "filter_log": [
+    {
+      "filter": "age18_100",
+      "before": 9172,
+      "after": 8923,
+      "removed": 249
+    },
+    {
+      "filter": "nonpregnant",
+      "before": 8923,
+      "after": 8817,
+      "removed": 106
+    },
+    {
+      "filter": "no_thyroxine",
+      "before": 8817,
+      "after": 7625,
+      "removed": 1192
+    },
+    {
+      "filter": "no_antithyroid_meds",
+      "before": 7625,
+      "after": 7528,
+      "removed": 97
+    },
+    {
+      "filter": "unambiguous_target",
+      "before": 7528,
+      "after": 6401,
+      "removed": 1127
+    },
+    {
+      "filter": "complete_labs",
+      "before": 6401,
+      "after": 4417,
+      "removed": 1984
+    },
+    {
+      "filter": "measured_labs",
+      "before": 4417,
+      "after": 4417,
+      "removed": 0
+    },
+    {
+      "filter": "nonnegative_finite_labs",
+      "before": 4417,
+      "after": 4417,
+      "removed": 0
+    }
+  ],
+  "identical_same_class_rows_removed": 121,
+  "conflicting_feature_groups_removed": 0,
+  "conflicting_rows_removed": 0,
+  "final_unique_feature_rows": 4296,
+  "class_counts": {
+    "no_comment": 3784,
+    "hypothyroid_group": 397,
+    "hyperthyroid_group": 115
+  },
+  "train_size": 3007,
+  "test_size": 1289,
+  "train_class_counts": {
+    "no_comment": 2649,
+    "hypothyroid_group": 278,
+    "hyperthyroid_group": 80
+  },
+  "test_class_counts": {
+    "no_comment": 1135,
+    "hypothyroid_group": 119,
+    "hyperthyroid_group": 35
+  },
+  "unit_of_split": "unique laboratory feature vector, not proven independent patient",
+  "patient_independence_established": false
+}

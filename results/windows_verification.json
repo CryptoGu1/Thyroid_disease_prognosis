@@ -1,0 +1,329 @@
+{
+  "checked_at_utc": "2026-11-10T19:17:44.846411+00:00",
+  "source_commit": "27df54078a5d60fbc767d4f968bf3987b9bcb48c",
+  "platform": "Windows x64",
+  "original_checks_passed": 24,
+  "training": {
+    "task": "Historical unambiguous diagnostic-comment groups using TSH, total T4 and T3",
+    "usage": "dataset_examples_only",
+    "units_verified": false,
+    "selected_model": "Random Forest",
+    "selection": "Highest mean macro F1 in 5-fold CV on training portion only; two fixed candidates",
+    "split": {
+      "seed": 42,
+      "train_fraction": 0.7,
+      "test_fraction": 0.3,
+      "stratified": true,
+      "test_used_for_selection": false
+    },
+    "class_names": [
+      "Без состояния, требующего комментария",
+      "Гипотиреоидная группа",
+      "Гипертиреоидная группа"
+    ],
+    "class_keys": [
+      "no_comment",
+      "hypothyroid_group",
+      "hyperthyroid_group"
+    ],
+    "feature_names": [
+      "TSH",
+      "TT4",
+      "T3"
+    ],
+    "models": [
+      {
+        "name": "Logistic regression",
+        "selected": false,
+        "train_cv": {
+          "f1_macro_mean": 0.8797521112834129,
+          "f1_macro_std": 0.02213478793123942,
+          "balanced_accuracy_mean": 0.9735796717757162,
+          "fold_scores": [
+            0.8445382046723605,
+            0.9031068992020792,
+            0.8771435777040715,
+            0.9036114888041865,
+            0.8703603860343673
+          ]
+        },
+        "accuracy": 0.9503491078355314,
+        "balanced_accuracy": 0.9719739878330187,
+        "f1_macro": 0.8430133945995214,
+        "f1_weighted": 0.954966680422161,
+        "roc_auc_macro_ovr": 0.9945304091892382,
+        "confusion_matrix": [
+          [
+            1072,
+            31,
+            32
+          ],
+          [
+            0,
+            119,
+            0
+          ],
+          [
+            1,
+            0,
+            34
+          ]
+        ],
+        "class_report": {
+          "no_comment": {
+            "precision": 0.9990680335507922,
+            "recall": 0.9444933920704845,
+            "f1-score": 0.9710144927536232,
+            "support": 1135.0
+          },
+          "hypothyroid_group": {
+            "precision": 0.7933333333333333,
+            "recall": 1.0,
+            "f1-score": 0.8847583643122676,
+            "support": 119.0
+          },
+          "hyperthyroid_group": {
+            "precision": 0.5151515151515151,
+            "recall": 0.9714285714285714,
+            "f1-score": 0.6732673267326733,
+            "support": 35.0
+          },
+          "accuracy": 0.9503491078355314,
+          "macro avg": {
+            "precision": 0.7691842940118803,
+            "recall": 0.9719739878330187,
+            "f1-score": 0.8430133945995214,
+            "support": 1289.0
+          },
+          "weighted avg": {
+            "precision": 0.9669349788806197,
+            "recall": 0.9503491078355314,
+            "f1-score": 0.954966680422161,
+            "support": 1289.0
+          }
+        },
+        "correct": 1225,
+        "test_size": 1289
+      },
+      {
+        "name": "Random Forest",
+        "selected": true,
+        "train_cv": {
+          "f1_macro_mean": 0.9431982412781942,
+          "f1_macro_std": 0.00837669863692532,
+          "balanced_accuracy_mean": 0.9676877281211732,
+          "fold_scores": [
+            0.9533751761239913,
+            0.9360191125620968,
+            0.9314038896581591,
+            0.9446015873237045,
+            0.9505914407230196
+          ]
+        },
+        "accuracy": 0.9883630721489527,
+        "balanced_accuracy": 0.9586742185861129,
+        "f1_macro": 0.937234987970737,
+        "f1_weighted": 0.9886877171246647,
+        "roc_auc_macro_ovr": 0.9977428199110937,
+        "confusion_matrix": [
+          [
+            1124,
+            2,
+            9
+          ],
+          [
+            0,
+            119,
+            0
+          ],
+          [
+            4,
+            0,
+            31
+          ]
+        ],
+        "class_report": {
+          "no_comment": {
+            "precision": 0.9964539007092199,
+            "recall": 0.9903083700440528,
+            "f1-score": 0.9933716305788776,
+            "support": 1135.0
+          },
+          "hypothyroid_group": {
+            "precision": 0.9834710743801653,
+            "recall": 1.0,
+            "f1-score": 0.9916666666666667,
+            "support": 119.0
+          },
+          "hyperthyroid_group": {
+            "precision": 0.775,
+            "recall": 0.8857142857142857,
+            "f1-score": 0.8266666666666667,
+            "support": 35.0
+          },
+          "accuracy": 0.9883630721489527,
+          "macro avg": {
+            "precision": 0.9183083250297951,
+            "recall": 0.9586742185861129,
+            "f1-score": 0.937234987970737,
+            "support": 1289.0
+          },
+          "weighted avg": {
+            "precision": 0.9892422305323538,
+            "recall": 0.9883630721489527,
+            "f1-score": 0.9886877171246647,
+            "support": 1289.0
+          }
+        },
+        "correct": 1274,
+        "test_size": 1289
+      }
+    ],
+    "audit": {
+      "raw_rows": 9172,
+      "eligible_before_dedup": 4417,
+      "filter_log": [
+        {
+          "filter": "age18_100",
+          "before": 9172,
+          "after": 8923,
+          "removed": 249
+        },
+        {
+          "filter": "nonpregnant",
+          "before": 8923,
+          "after": 8817,
+          "removed": 106
+        },
+        {
+          "filter": "no_thyroxine",
+          "before": 8817,
+          "after": 7625,
+          "removed": 1192
+        },
+        {
+          "filter": "no_antithyroid_meds",
+          "before": 7625,
+          "after": 7528,
+          "removed": 97
+        },
+        {
+          "filter": "unambiguous_target",
+          "before": 7528,
+          "after": 6401,
+          "removed": 1127
+        },
+        {
+          "filter": "complete_labs",
+          "before": 6401,
+          "after": 4417,
+          "removed": 1984
+        },
+        {
+          "filter": "measured_labs",
+          "before": 4417,
+          "after": 4417,
+          "removed": 0
+        },
+        {
+          "filter": "nonnegative_finite_labs",
+          "before": 4417,
+          "after": 4417,
+          "removed": 0
+        }
+      ],
+      "identical_same_class_rows_removed": 121,
+      "conflicting_feature_groups_removed": 0,
+      "conflicting_rows_removed": 0,
+      "final_unique_feature_rows": 4296,
+      "class_counts": {
+        "no_comment": 3784,
+        "hypothyroid_group": 397,
+        "hyperthyroid_group": 115
+      },
+      "train_size": 3007,
+      "test_size": 1289,
+      "train_class_counts": {
+        "no_comment": 2649,
+        "hypothyroid_group": 278,
+        "hyperthyroid_group": 80
+      },
+      "test_class_counts": {
+        "no_comment": 1135,
+        "hypothyroid_group": 119,
+        "hyperthyroid_group": 35
+      },
+      "unit_of_split": "unique laboratory feature vector, not proven independent patient",
+      "patient_independence_established": false
+    },
+    "export_parity": {
+      "test_rows_checked": 1289,
+      "max_absolute_probability_difference": 8.881784197001252e-16,
+      "all_class_predictions_equal": true
+    },
+    "limitations": [
+      "Historical selected complete cases; no external clinical validation.",
+      "Record identifiers are not documented as patient identifiers.",
+      "Source does not document physical units sufficiently for clinical mapping.",
+      "No free T4 or free T3 is present; do not substitute them.",
+      "Scores are uncalibrated and are not patient disease risks.",
+      "No-comment class is not equivalent to confirmed healthy."
+    ]
+  },
+  "training_provenance": {
+    "dataset_hf": "https://huggingface.co/datasets/anasmakki/thyroid_disease_dataset",
+    "hf_file": "thyroidDF (1).csv",
+    "primary_source": "https://archive.ics.uci.edu/dataset/102/thyroid+disease",
+    "doi": "10.24432/C5D010",
+    "primary_source_license": "CC BY 4.0",
+    "hf_mirror_license_metadata": "not supplied; primary-source attribution retained",
+    "source_sha256": "17bfe20da369ef710c5bea26fdec8b0210a32e628621cbbe1537e6607b1c544e",
+    "source_verified_against_uci": true,
+    "field_mismatches_in_9172_rows": 0,
+    "versions": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.8.0"
+    },
+    "training_features": [
+      "TSH",
+      "TT4",
+      "T3"
+    ],
+    "feature_units": "Not documented by primary .names; no clinical mapping asserted",
+    "pretrained_model": false,
+    "note": "This is our fitted sklearn model on a verified Hugging Face dataset, not a pretrained Hugging Face model."
+  },
+  "javascript_parity": {
+    "rows": 1289,
+    "classes_equal": true,
+    "max_score_difference": 8.881784197001252e-16,
+    "example_02_error_preserved": true
+  },
+  "portable_checks": [
+    {
+      "check": "embedded_python_and_busy_port",
+      "passed": true,
+      "url": "http://127.0.0.1:50079/",
+      "output": [
+        "Port 8765 is unavailable. Using another available local port.",
+        "ThyroVision LAB: http://127.0.0.1:50079/"
+      ]
+    },
+    {
+      "check": "restart_same_port_after_stop",
+      "passed": true
+    },
+    {
+      "check": "START.bat_embedded_python_arguments",
+      "passed": true
+    },
+    {
+      "check": "incomplete_unpack_message",
+      "passed": true
+    }
+  ],
+  "pdf_print_verified": false,
+  "browser_auto_open_verified": false
+}

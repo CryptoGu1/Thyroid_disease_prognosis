@@ -1,0 +1,25 @@
+{
+  "dataset_hf": "https://huggingface.co/datasets/anasmakki/thyroid_disease_dataset",
+  "hf_file": "thyroidDF (1).csv",
+  "primary_source": "https://archive.ics.uci.edu/dataset/102/thyroid+disease",
+  "doi": "10.24432/C5D010",
+  "primary_source_license": "CC BY 4.0",
+  "hf_mirror_license_metadata": "not supplied; primary-source attribution retained",
+  "source_sha256": "17bfe20da369ef710c5bea26fdec8b0210a32e628621cbbe1537e6607b1c544e",
+  "source_verified_against_uci": true,
+  "field_mismatches_in_9172_rows": 0,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0"
+  },
+  "training_features": [
+    "TSH",
+    "TT4",
+    "T3"
+  ],
+  "feature_units": "Not documented by primary .names; no clinical mapping asserted",
+  "pretrained_model": false,
+  "note": "This is our fitted sklearn model on a verified Hugging Face dataset, not a pretrained Hugging Face model."
+}

@@ -1,0 +1,165 @@
+{
+  "usage": "dataset_examples_only",
+  "feature_names": [
+    "TSH",
+    "TT4",
+    "T3"
+  ],
+  "class_names": [
+    "Без состояния, требующего комментария",
+    "Гипотиреоидная группа",
+    "Гипертиреоидная группа"
+  ],
+  "examples": [
+    {
+      "id": "uci_698",
+      "title": "Пример 01",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 2.0,
+        "TT4": 80.0,
+        "T3": 1.5
+      },
+      "age": 73,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 0,
+      "true_class_key": "no_comment",
+      "original_target": "-",
+      "reference_prediction": 0,
+      "reference_scores": [
+        0.9094497639745187,
+        0.09055023602548071,
+        0.0
+      ],
+      "is_error": false
+    },
+    {
+      "id": "uci_7098",
+      "title": "Пример 02",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 0.065,
+        "TT4": 133.0,
+        "T3": 3.4
+      },
+      "age": 48,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 0,
+      "true_class_key": "no_comment",
+      "original_target": "-",
+      "reference_prediction": 2,
+      "reference_scores": [
+        0.3513238854017282,
+        0.0012432771979676528,
+        0.6474328374003042
+      ],
+      "is_error": true
+    },
+    {
+      "id": "uci_4485",
+      "title": "Пример 03",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 12.0,
+        "TT4": 84.0,
+        "T3": 2.4
+      },
+      "age": 37,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 1,
+      "true_class_key": "hypothyroid_group",
+      "original_target": "G",
+      "reference_prediction": 1,
+      "reference_scores": [
+        0.14169705805849062,
+        0.8583029419415089,
+        0.0
+      ],
+      "is_error": false
+    },
+    {
+      "id": "uci_3510",
+      "title": "Пример 04",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 8.5,
+        "TT4": 91.0,
+        "T3": 2.1
+      },
+      "age": 30,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 1,
+      "true_class_key": "hypothyroid_group",
+      "original_target": "G",
+      "reference_prediction": 1,
+      "reference_scores": [
+        0.120275500847432,
+        0.8797244991525676,
+        0.0
+      ],
+      "is_error": false
+    },
+    {
+      "id": "uci_4435",
+      "title": "Пример 05",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 0.005,
+        "TT4": 158.0,
+        "T3": 3.0
+      },
+      "age": 76,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 2,
+      "true_class_key": "hyperthyroid_group",
+      "original_target": "A",
+      "reference_prediction": 2,
+      "reference_scores": [
+        0.10100835553188486,
+        0.0,
+        0.8989916444681153
+      ],
+      "is_error": false
+    },
+    {
+      "id": "uci_8326",
+      "title": "Пример 06",
+      "source": "UCI thyroid0387 via Hugging Face",
+      "split": "test",
+      "values": {
+        "TSH": 1.0,
+        "TT4": 117.0,
+        "T3": 3.2
+      },
+      "age": 25,
+      "pregnant": false,
+      "on_thyroxine": false,
+      "on_antithyroid_meds": false,
+      "true_class_id": 2,
+      "true_class_key": "hyperthyroid_group",
+      "original_target": "C",
+      "reference_prediction": 0,
+      "reference_scores": [
+        0.8488711549399719,
+        0.008344589300988126,
+        0.14278425575903983
+      ],
+      "is_error": true
+    }
+  ]
+}

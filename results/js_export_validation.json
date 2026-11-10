@@ -1,0 +1,7 @@
+{
+  "test_rows": 1289,
+  "changed_labels": 0,
+  "max_absolute_probability_difference": 8.881784197001252e-16,
+  "runtime": "Node JavaScript research-model.js",
+  "matches_sklearn": true
+}
