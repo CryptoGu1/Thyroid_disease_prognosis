@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+.venv/
+*.pyc
+.openai/site-workflow.json
+work/
+
+reproduced_results/
+
+# Local checks and archived ultrasound prototype are not part of LAB delivery.
+research/test_*.cjs
+research/test_*.py
+tests/
+legacy/
+.openai/
+runtime/
+*.zip
