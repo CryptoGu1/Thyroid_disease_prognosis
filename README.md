@@ -15,6 +15,8 @@
 
 ## Запуск готового Windows-комплекта
 
+[Скачать готовую Windows-сборку в Releases](https://github.com/CryptoGu1/Thyroid_disease_prognosis/releases). Выберите вложение `ThyroVision_LAB_Windows.zip`.
+
 1. Полностью распакуйте `ThyroVision_LAB_Windows.zip` через «Извлечь всё».
 2. Откройте папку `ThyroVision_LAB_Windows` и запустите `START.bat`.
 3. Дождитесь открытия браузера. Оставьте окно запуска открытым.
