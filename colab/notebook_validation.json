@@ -1,0 +1,15 @@
+{
+  "code_cells_executed": [
+    "prepare-lab",
+    "open-lab",
+    "research-example",
+    "optional-training"
+  ],
+  "verified_assets": 218,
+  "downloaded_packages": 5,
+  "served_html_matches": true,
+  "research_prediction_matches": true,
+  "optional_training_skipped": true,
+  "live_google_colab_tested": false,
+  "nbformat_valid": true
+}
